@@ -1,0 +1,9 @@
+consul:
+  client:
+    registration:
+      enabled: true
+      tags:
+        - "consulTagValueFromMicronaut"
+
+echo:
+  value: value from application.yml

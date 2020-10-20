@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.basalt
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, config-consul, consul, discovery-consul, docker, http-client, java, java-application, junit, logback, maven, netty-server, readme, shade, yaml]

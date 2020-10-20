@@ -1,0 +1,21 @@
+micronaut:
+  server:
+    port: -1
+  application:
+    name: upper
+  config-client:
+    enabled: true
+  router:
+    static-resources:
+      default:
+        enabled: true
+        mapping: "/**"
+        paths:
+          - classpath:static
+consul:
+  client:
+    registration:
+      enabled: true
+    config:
+      format: YAML
+    defaultZone: "${CONSUL_HOST:localhost}:${CONSUL_PORT:8500}"
